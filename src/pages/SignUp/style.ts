@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../breakpoints";
 
 export const Container = styled.main`
     display: flex;
@@ -7,7 +8,7 @@ export const Container = styled.main`
     flex: 1;
     height: 100vh;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: ${breakpoints.mobile}px){
         flex-direction: column;
         margin-top: -60px;
         overflow-y: hidden;
@@ -18,7 +19,7 @@ export const Container = styled.main`
 export const LeftContent = styled.section`
     margin-right: 120px;
     width: 260px;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: ${breakpoints.mobile}px){
         width: 300px;
         display: flex;
         flex-direction: column;
@@ -82,7 +83,7 @@ export const FormArea = styled.form`
     border-radius: 10px;
     box-shadow: 0 10px 0px rgba(0, 0, 0, 0.2);
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: ${breakpoints.mobile}px){
         width: 320px;
         
     }

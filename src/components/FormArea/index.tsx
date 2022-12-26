@@ -33,6 +33,7 @@ export const FormArea = () => {
                     onChange={e => 
                     setFormData(prev => 
                     ({ ...prev, password: e.target.value }))}/>
+                    
                 </S.Fields>
                 <S.Button 
                 backgroundColor="--primary-green" 
